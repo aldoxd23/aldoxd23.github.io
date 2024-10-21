@@ -1,0 +1,113 @@
+body {
+  background-image: url(pepe.jpg);
+  background-size: cover; 
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+  font-family: Arial, sans-serif; 
+  margin: 0;
+  padding: 0;
+}
+
+form {
+  max-width: 500px;
+  margin: 40px auto; 
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.9); 
+  border-radius: 8px; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  flex-direction: column; 
+}
+
+input {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 12px;
+  width: 100%; 
+  margin-bottom: 15px; 
+  border: 1px solid #ffffff; 
+  border-radius: 6px; 
+  font-size: 16px; 
+  color: #333; 
+  background-color: #fff; 
+}
+
+button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 16px; 
+  border-radius: 6px; 
+  width: 100%;
+  max-width: 200px; 
+  height: 44px;
+  font-weight: bold;
+  border: none;
+  background-color: #f44336;
+  cursor: pointer;
+  transition: background-color 0.3s, box-shadow 0.3s, transform 0.3s;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2); 
+}
+
+button:hover {
+  background-color: #e53935;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); 
+  transform: translateY(-2px); 
+}
+
+.contenedores {
+  margin-bottom: 15px; 
+  padding: 15px;
+  color: #333;
+  border: 1px solid #ddd; 
+  border-radius: 6px; 
+  background: #f9f9f9;
+  box-sizing: border-box;
+  width: 100%; 
+  max-width: 100%; 
+  display: flex;
+  flex-direction: column; 
+}
+
+.fecha {
+  font-size: 14px;
+  color: #666;
+}
+
+.editar, .borrar {
+  margin-left: 10px;
+  cursor: pointer;
+  color: #ffffff;
+}
+
+.editar:hover, .borrar:hover {
+  color: #0056b3; 
+}
+
+.editar-tarea {
+  width: calc(100% - 24px); 
+  padding: 12px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 6px; 
+  box-sizing: border-box;
+}
+
+.boton-guardar {
+  margin-left: 10px;
+  cursor: pointer;
+  color: #ffffff; 
+}
+
+@media (max-width: 600px) {
+  form {
+      margin: 20px;
+      padding: 15px;
+  }
+  button {
+      max-width: 100%;
+  }
+}

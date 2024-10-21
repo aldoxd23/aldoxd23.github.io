@@ -1,0 +1,119 @@
+* {
+  box-sizing: border-box; /* Consistent box sizing */
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Full height */
+  background-image: url(pepe.jpg);
+  background-size: cover auto; 
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+  font-family: Arial, sans-serif; 
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+form {
+  max-width: 500px;
+  margin: 40px auto; 
+  padding: 20px;
+  background: rgba(235, 235, 235, 0.9); 
+  border-radius: 8px; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  display: flex; /* Added display property */
+  flex-direction: column; /* Stack elements */
+  align-items: center; /* Center items */
+}
+
+input {
+  padding: 12px;
+  width: 100%; /* Full width */
+  margin-bottom: 15px; 
+  border: 1px solid #050000; 
+  border-radius: 6px; 
+  font-size: 16px; 
+  color: #333; 
+  background-color: #f8f7f7; 
+}
+
+input:focus {
+  outline: 2px solid #1cc516; /* Focus style */
+  outline-offset: 2px;
+}
+
+button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 16px; 
+  border-radius: 6px; 
+  width: 70%;
+  max-width: 200px; 
+  height: 44px;
+  font-weight: bold;
+  border: none;
+  background-color: #1cc516;
+  cursor: pointer;
+  transition: background-color 0.3s, box-shadow 0.3s, transform 0.3s;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2); 
+}
+
+button:hover {
+  background-color: #e53935; 
+}
+
+button:active {
+  transform: scale(0.98); 
+}
+
+.contenedores {
+  margin-bottom: 35px; 
+  padding: 2px;
+  color: #000000;
+  border: 1px solid #000000; 
+  border-radius: 6px; 
+  background: #f1f1f1;
+  width: 500px; 
+  display: flex;
+  flex-direction: column; 
+  text-align: start;
+  overflow: hidden;
+}
+
+.fecha {
+  font-size: 14px;
+  color: #666;
+}
+
+.editar, .borrar {
+  margin-left: 10px;
+  cursor: pointer;
+  color: #ffffff;
+}
+
+.editar:hover, .borrar:hover {
+  color: #003ae7; 
+}
+
+.editar-tarea {
+  width: calc(100% - 24px); 
+  padding: 12px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 6px; 
+}
+
+.boton-guardar {
+  margin-left: 10px;
+  cursor: pointer;
+  color: #ffffff; 
+}
